@@ -1,0 +1,10 @@
+{
+    "project": [
+        {
+            "cover":"/Proj/demo1/demo1im.jpg",
+            "title":"Resource allocation system",
+            "techstack":"Javascript , Nodejs , Express , MongoDB",
+            "url":"www.google.com"
+        }
+    ]
+}
