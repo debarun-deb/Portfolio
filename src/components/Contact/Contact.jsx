@@ -57,7 +57,7 @@ const Contact = () => {
                         />
                     </h1>
                     <p>
-                        I specialize in backend web development, focusing on making digital experiences smooth and efficient. Whether you're a fellow developer, looking to collaborate, or have an interesting project in mind, I'd love to hear from you. Let&apos;s chat and see how we can create something great together.
+                    Whether you're another developer interested in teaming up or if you've got an exciting project in mind, I'd be delighted to connect with you. Let's have a chat and explore how we can craft something awesome together.
                     </p>
                     <div className='contact-form'>
                         <form ref={refForm} onSubmit={sendEmail}>

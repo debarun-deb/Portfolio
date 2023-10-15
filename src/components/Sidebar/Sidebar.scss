@@ -1,5 +1,5 @@
 .sidebar {
-    background: #222831;
+    background: #12161c;
     width: 68px;
     height: 100%;
     position: absolute;
@@ -34,7 +34,7 @@
 
         a {
             font-size: 22px;
-            color: #4d4d4e;
+            color: #3a3a3c;
             display: block;
             line-height: 51px;
             height: 51px;
@@ -46,7 +46,7 @@
             }
 
             &:hover{
-                color: #00ADB5;
+                color: rgb(16, 179, 188);
 
                 svg {
                     opacity: 0;

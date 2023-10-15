@@ -5,6 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGitAlt, faHtml5, faJsSquare, faNodeJs, faPython } from '@fortawesome/free-brands-svg-icons'
 import { faDatabase } from '@fortawesome/free-solid-svg-icons'
 import Loader from '../Loader/Loader'
+import myCV from '../../assets/CV/debarun_CV.pdf';
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
@@ -19,6 +20,13 @@ const About = () => {
     }, 1500); // Adjust the animation delay as needed
   }, []);
 
+  const handleDownloadCV = () => {
+    // Trigger the download of the imported CV file
+    const anchor = document.createElement('a');
+    anchor.href = myCV;
+    anchor.download = 'my_cv.pdf'; // Specify the download file name
+    anchor.click();
+  };
 
   return (
     <>
@@ -32,8 +40,9 @@ const About = () => {
           idx={15}
         /></h1>
         <p>
-        Hello! I'm a dedicated backend developer with a knack for building efficient systems and collaborating across teams to create innovative tech solutions. I approach challenges with confidence and curiosity, constantly seeking new avenues for learning and growth. As I look ahead, I'm eager to dive into the world of AI and expand my expertise further, leveraging my strong foundation in backend development to explore the endless possibilities that AI and machine learning offer. I'm excited to drive innovation and create impactful solutions in this exciting field.
+        Hello! I'm a dedicated backend developer with a passion for building efficient systems . My skills include <span className='skills-section'>JavaScript, Node.js, Express.js, MongoDB, Mongoose, Python, Git, and more,</span> with a strong focus on server, API, and database integration. I'm eager to explore the world of AI and machine learning, leveraging my strong backend foundation to drive innovation and create impactful solutions. Check out my CV for more details.
         </p>
+          <button className='download-button' onClick={handleDownloadCV}>Download CV</button> {/* Add the download button */}
       </div>
       <div className='stage-cube-count'>
         <div className='cubespinner'>

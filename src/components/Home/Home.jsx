@@ -35,6 +35,7 @@ const Home = () => {
                 </div>
                 <div className='pfp-body'>
                      <img className='pfp' src={Profilepic} alt="profile-picture" />
+                     <div className='pfp-shadow'></div>
                 </div>
                
             </div>
